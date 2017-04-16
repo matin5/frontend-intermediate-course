@@ -31,10 +31,14 @@ body {
 
 .item #title {
   display:inline-block;
-}
-
-.item p {
+  width : 200px;
+  color: white;
   font-size: 11pt;
   line-height: 11pt;
-  color: white;
+}
+
+.ellipsis {
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
