@@ -31,6 +31,7 @@ body {
 
 .thumbnail img {
   width: 100%;
+  vertical-align:bottom;
 }
 
 .footer {
