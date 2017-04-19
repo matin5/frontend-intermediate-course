@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/bg-default.jpg");
+  background: url("../images/bg-default.jpg") no-repeat center;
   background-attachment: fixed;
   margin: 0;
 }
@@ -13,7 +13,9 @@ body {
 .row {
   width: 1000px;
   margin: 0 auto;
-  text-align: center; /* 但是下方兩排文字無法對齊 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .col {
@@ -29,12 +31,15 @@ body {
 
 .thumbnail img {
   width: 100%;
+  vertical-align:bottom;
 }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 10px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .avator {
@@ -42,6 +47,7 @@ body {
   height: 50px;
   overflow: hidden;
   border-radius: 50%;
+  margin-right: 10px;
 }
 
 .avator img {
@@ -50,9 +56,6 @@ body {
 
 .description {
   color: white;
-  position: absolute;
-  top: 14px;
-  left: 70px;
 }
 
 .channel_owner {
