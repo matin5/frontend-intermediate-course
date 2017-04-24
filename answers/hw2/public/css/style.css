@@ -1,0 +1,78 @@
+body {
+  background: url("../images/bg-default.jpg") no-repeat center;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  padding-top: 30px;
+}
+
+.row {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+  width: 300px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.col:hover {
+  filter: brightness(150%);
+  transition-duration: 0.3s;
+
+  /* 延遲1秒 */
+  /*transition-delay: 1s;*/
+
+  /* 改背景顏色 */
+  /*background-color: #ff0000;*/
+}
+
+.col:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.thumbnail img {
+  width: 100%;
+  vertical-align:bottom;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.avator {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.avator img {
+  width: 100%;
+}
+
+.description {
+  color: white;
+}
+
+.channel_owner {
+  margin-bottom: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 200px;
+}
