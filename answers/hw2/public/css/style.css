@@ -27,6 +27,7 @@ body {
 
 .col:hover {
   filter: brightness(150%);
+  box-shadow: 5px 5px 20px;
   transition-duration: 0.3s;
 
   /* 延遲1秒 */
