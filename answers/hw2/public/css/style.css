@@ -23,19 +23,24 @@ body {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
+
+  transition: filter 0.3s ease-in, box-shadow 0.3s ease-in;
+  /* 延遲1秒 */
+  /*transition-delay: 1s;*/
 }
 
 .col:hover {
   filter: brightness(150%);
   box-shadow: 5px 5px 20px;
-  transition-duration: 0.3s;
-
-  /* 延遲1秒 */
-  /*transition-delay: 1s;*/
 
   /* 改背景顏色 */
   /*background-color: #ff0000;*/
 }
+
+/*單獨只對圖片使用變亮的效果*/
+/*.col:hover .thumbnail {
+  filter: brightness(150%);
+}*/
 
 .col:nth-child(3n) {
   margin-right: 0px;
